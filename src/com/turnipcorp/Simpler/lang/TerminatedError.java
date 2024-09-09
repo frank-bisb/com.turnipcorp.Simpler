@@ -14,7 +14,7 @@ public class TerminatedError extends java.lang.Error {
 	private String msg;
 	
 	/**
-	 * Constructor for InterpreterError class
+	 * Constructor for TerminatedError class
 	 * @param arg message: String
 	 */
 	public TerminatedError(String arg) {super(arg); msg = arg;}
