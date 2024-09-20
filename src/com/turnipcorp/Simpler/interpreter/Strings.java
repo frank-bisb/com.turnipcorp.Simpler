@@ -36,7 +36,7 @@ public class Strings {
 	
 	public static boolean isNumeric(String str) {
 		try {
-			int num = Integer.parseInt(str);
+			Integer.parseInt(str);
 			return true;
 		} catch (NumberFormatException e) {
 			return false;

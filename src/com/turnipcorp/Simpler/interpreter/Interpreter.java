@@ -764,7 +764,7 @@ public class Interpreter {
 		do {
 			macro.add(lines[i]);
 		} while(lines[i++].indexOf("END MACRO") != 0);
-		macro.removeLast();
+		macro.remove(macro.size()-1);
 		macroMemory.put(lines[startingLine].split(" ")[1], Strings.toStringArray(macro.toArray()));
 	}
 	
